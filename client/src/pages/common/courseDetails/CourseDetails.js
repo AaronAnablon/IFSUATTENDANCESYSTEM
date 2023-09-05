@@ -161,7 +161,7 @@ export default (props) => {
   const titleList = [
     { name: "Home", link: "/dashboard" },
     {
-      name: `Course: ${props.match.params.id}`,
+      name: `Department: ${props.match.params.id}`,
       link: `/course/${props.match.params.id}`,
     },
   ];

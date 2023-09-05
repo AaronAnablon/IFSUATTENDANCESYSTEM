@@ -230,7 +230,7 @@ export default (props) => {
         </Card>
 
         <Divider />
-        <Space>
+        {/* <Space>
           <GoogleLogin
             clientId={GOOGLE_CLIENT_ID}
             buttonText='Continue With Google'
@@ -252,7 +252,7 @@ export default (props) => {
             Redirecting, please wait...
             <LoadingOutlined />
           </Space>
-        )}
+        )} */}
       </Content>
 
       <Footer />

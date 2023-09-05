@@ -29,12 +29,12 @@ export default ({
       case modalItems.enrolment.name:
         return (
           <>
-            <strong>Student: </strong>
+            <strong>Student/Employee: </strong>
             {payload.student?.firstName} {payload.student?.lastName} (
             {payload.student?.cardID})
             <br />
             <br />
-            <strong>Course (ID: {payload.course?.shortID}): </strong>
+            <strong>Department (ID: {payload.course?.shortID}): </strong>
             {payload.course?.code} {payload.course?.name} (
             {payload.course?.session})
           </>
@@ -71,7 +71,7 @@ export default ({
             </p>
             <br />
             <p>
-              <strong>Course: </strong>
+              <strong>Department: </strong>
               {payload.course}
             </p>
             <p>

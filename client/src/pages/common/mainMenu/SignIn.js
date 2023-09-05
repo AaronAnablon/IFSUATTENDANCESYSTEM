@@ -136,7 +136,7 @@ export default (props) => {
           </Form>
         </Card>
         <Divider />
-        <Space>
+        {/* <Space>
           <GoogleLogin
             clientId={GOOGLE_CLIENT_ID}
             buttonText='Continue With Google'
@@ -149,14 +149,14 @@ export default (props) => {
             onRequest={() => setPressedGoogleLogin(true)}
             disabled={pressedGoogleLogin}
           />
-        </Space>
-        {loginGoogleUserStatus.loading && (
+        </Space> */}
+        {/* {loginGoogleUserStatus.loading && (
           <Space>
             <Divider />
               Redirecting, please wait...
             <LoadingOutlined />
           </Space>
-        )}
+        )} */}
       </Content>
       <Footer />
     </Layout>

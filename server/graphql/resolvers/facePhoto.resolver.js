@@ -108,6 +108,7 @@ module.exports = {
         await facePhoto.save();
         return FacePhotogqlParser(facePhoto);
       } catch (err) {
+        console.log(err)
         throw err;
       }
     },

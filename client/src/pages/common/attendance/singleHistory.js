@@ -223,7 +223,7 @@ export default (props) => {
           titleList={[
             { name: "Home", link: "/dashboard" },
             {
-              name: `Course: ${props.match.params.courseID}`,
+              name: `Department: ${props.match.params.courseID}`,
               link: `/course/${props.match.params.courseID}`,
             },
             {
@@ -243,7 +243,7 @@ export default (props) => {
                 <Card>
                   <Title
                     level={4}
-                  >{`Course: ${attendanceGQLQuery.data.getAttendance.course.shortID} - ${attendanceGQLQuery.data.getAttendance.course.code} - ${attendanceGQLQuery.data.getAttendance.course.name} - ${attendanceGQLQuery.data.getAttendance.course.session}`}</Title>
+                  >{`Department: ${attendanceGQLQuery.data.getAttendance.course.shortID} - ${attendanceGQLQuery.data.getAttendance.course.code} - ${attendanceGQLQuery.data.getAttendance.course.name} - ${attendanceGQLQuery.data.getAttendance.course.session}`}</Title>
 
                   <p>
                     Date:{" "}

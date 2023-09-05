@@ -32,15 +32,15 @@ const getEmailData = (to, firstName, template, payload) => {
   switch (template) {
     case MAIL_TEMPLATE_TYPE.Welcome:
       data = {
-        from: "Attendlytical <attendlytical@gmail.com>",
+        from: "IFSU ATTENDANCE <iFSU ATTENDANCE@gmail.com>",
         to,
-        subject: `Welcome To Attendlytical!`,
+        subject: `Welcome To IFSU ATTENDANCE!`,
         html: Welcome(firstName),
       };
       break;
     case MAIL_TEMPLATE_TYPE.KickStudent:
       data = {
-        from: "Attendlytical <attendlytical@gmail.com>",
+        from: "IFSU ATTENDANCE <iFSU ATTENDANCE@gmail.com>",
         to,
         subject: `Course ID: ${payload.course.shortID} - You had been kicked out`,
         html: KickStudent(firstName, payload),
@@ -48,7 +48,7 @@ const getEmailData = (to, firstName, template, payload) => {
       break;
     case MAIL_TEMPLATE_TYPE.DeleteCourse:
       data = {
-        from: "Attendlytical <attendlytical@gmail.com>",
+        from: "IFSU ATTENDANCE <iFSU ATTENDANCE@gmail.com>",
         to,
         subject: `Course ID: ${payload.course.shortID} - A course was deleted by course owner`,
         html: DeleteCourse(firstName, payload),
@@ -56,7 +56,7 @@ const getEmailData = (to, firstName, template, payload) => {
       break;
     case MAIL_TEMPLATE_TYPE.WithdrawCourse:
       data = {
-        from: "Attendlytical <attendlytical@gmail.com>",
+        from: "IFSU ATTENDANCE <iFSU ATTENDANCE@gmail.com>",
         to,
         subject: `Course ID: ${payload.course.shortID} - A student had withdrawn from your course`,
         html: WithdrawCourse(firstName, payload),
@@ -64,7 +64,7 @@ const getEmailData = (to, firstName, template, payload) => {
       break;
       case MAIL_TEMPLATE_TYPE.CreateAttendance:
         data = {
-          from: "Attendlytical <attendlytical@gmail.com>",
+          from: "IFSU ATTENDANCE <iFSU ATTENDANCE@gmail.com>",
           to,
           subject: `Course ID: ${payload.course.shortID} - New Attendance`,
           html: CreateAttendance(firstName, payload),

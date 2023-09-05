@@ -19,7 +19,7 @@ export const NavbarData = {
       },
       ,
       {
-        title: "Enrol Course",
+        title: "Enter Department",
         href: "enrolcourse",
       },
       {
@@ -39,7 +39,7 @@ export const NavbarData = {
         href: "dashboard",
       },
       {
-        title: "Add Course",
+        title: "Add Department",
         href: "addcourse",
       },
       {

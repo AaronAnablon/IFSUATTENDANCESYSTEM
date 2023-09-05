@@ -13,17 +13,17 @@ export default () => {
         <Card>
           <Title level={2}>Terms and Conditions</Title>
 
-          <p>Welcome to Attendlytical!</p>
+          <p>Welcome to IFSU ATTENDANCE!</p>
 
           <p>
             These terms and conditions outline the rules and regulations for the
-            use of Attendlytical's Website, located at
-            https://attendlytical.netlify.app.
+            use of IFSU ATTENDANCE's Website, located at
+            https://iFSU ATTENDANCE.netlify.app.
           </p>
 
           <p>
             By accessing this website we assume you accept these terms and
-            conditions. Do not continue to use Attendlytical if you do not agree
+            conditions. Do not continue to use IFSU ATTENDANCE if you do not agree
             to take all of the terms and conditions stated on this page.
           </p>
 
@@ -50,8 +50,8 @@ export default () => {
           </h3>
 
           <p>
-            We employ the use of cookies. By accessing Attendlytical, you agreed
-            to use cookies in agreement with the Attendlytical's Privacy Policy.{" "}
+            We employ the use of cookies. By accessing IFSU ATTENDANCE, you agreed
+            to use cookies in agreement with the IFSU ATTENDANCE's Privacy Policy.{" "}
           </p>
 
           <p>
@@ -67,19 +67,19 @@ export default () => {
           </h3>
 
           <p>
-            Unless otherwise stated, Attendlytical and/or its licensors own the
-            intellectual property rights for all material on Attendlytical. All
+            Unless otherwise stated, IFSU ATTENDANCE and/or its licensors own the
+            intellectual property rights for all material on IFSU ATTENDANCE. All
             intellectual property rights are reserved. You may access this from
-            Attendlytical for your own personal use subjected to restrictions
+            IFSU ATTENDANCE for your own personal use subjected to restrictions
             set in these terms and conditions.
           </p>
 
           <p>You must not:</p>
           <ul>
-            <li>Republish material from Attendlytical</li>
-            <li>Sell, rent or sub-license material from Attendlytical</li>
-            <li>Reproduce, duplicate or copy material from Attendlytical</li>
-            <li>Redistribute content from Attendlytical</li>
+            <li>Republish material from IFSU ATTENDANCE</li>
+            <li>Sell, rent or sub-license material from IFSU ATTENDANCE</li>
+            <li>Reproduce, duplicate or copy material from IFSU ATTENDANCE</li>
+            <li>Redistribute content from IFSU ATTENDANCE</li>
           </ul>
 
           <p>
@@ -99,19 +99,19 @@ export default () => {
           <p>
             Parts of this website offer an opportunity for users to post and
             exchange opinions and information in certain areas of the website.
-            Attendlytical does not filter, edit, publish or review Comments
+            IFSU ATTENDANCE does not filter, edit, publish or review Comments
             prior to their presence on the website. Comments do not reflect the
-            views and opinions of Attendlytical,its agents and/or affiliates.
+            views and opinions of IFSU ATTENDANCE,its agents and/or affiliates.
             Comments reflect the views and opinions of the person who post their
             views and opinions. To the extent permitted by applicable laws,
-            Attendlytical shall not be liable for the Comments or for any
+            IFSU ATTENDANCE shall not be liable for the Comments or for any
             liability, damages or expenses caused and/or suffered as a result of
             any use of and/or posting of and/or appearance of the Comments on
             this website.
           </p>
 
           <p>
-            Attendlytical reserves the right to monitor all Comments and to
+            IFSU ATTENDANCE reserves the right to monitor all Comments and to
             remove any Comments which can be considered inappropriate, offensive
             or causes breach of these Terms and Conditions.
           </p>
@@ -140,7 +140,7 @@ export default () => {
           </ul>
 
           <p>
-            You hereby grant Attendlytical a non-exclusive license to use,
+            You hereby grant IFSU ATTENDANCE a non-exclusive license to use,
             reproduce, edit and authorize others to use, reproduce and edit any
             of your Comments in any and all forms, formats or media.
           </p>
@@ -201,7 +201,7 @@ export default () => {
             or to our accredited businesses; (b) the organization does not have
             any negative records with us; (c) the benefit to us from the
             visibility of the hyperlink compensates the absence of
-            Attendlytical; and (d) the link is in the context of general
+            IFSU ATTENDANCE; and (d) the link is in the context of general
             resource information.
           </p>
 
@@ -216,7 +216,7 @@ export default () => {
           <p>
             If you are one of the organizations listed in paragraph 2 above and
             are interested in linking to our website, you must inform us by
-            sending an e-mail to Attendlytical. Please include your name, your
+            sending an e-mail to IFSU ATTENDANCE. Please include your name, your
             organization name, contact information as well as the URL of your
             site, a list of any URLs from which you intend to link to our
             Website, and a list of the URLs on our site to which you would like
@@ -236,7 +236,7 @@ export default () => {
           </ul>
 
           <p>
-            No use of Attendlytical's logo or other artwork will be allowed for
+            No use of IFSU ATTENDANCE's logo or other artwork will be allowed for
             linking absent a trademark license agreement.
           </p>
 

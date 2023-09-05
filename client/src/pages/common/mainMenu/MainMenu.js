@@ -21,7 +21,7 @@ export default () => {
                 type="left"
                 mode="random"
               >
-                Welcome to Attendlytical
+                Welcome to IFSU ATTENDANCE
               </Texty>
             </Title>
             <Texty

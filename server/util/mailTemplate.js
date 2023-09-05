@@ -3,13 +3,13 @@ const {OfficialURL}=require("../globalData");
 module.exports.Welcome = (firstName) => {
   return `
         <p>Hi ${firstName}, </p>
-        <p>Thank you for signing up Attendlytical! Do send me an email to:
-        <a href="mailto:attendlytical@gmail.com">attendlytical@gmail.com</a></p>
+        <p>Thank you for signing up IFSU ATTENDANCE! Do send me an email to:
+        <a href="mailto:iFSU ATTENDANCE@gmail.com">iFSU ATTENDANCE@gmail.com</a></p>
         if you have any inquiry, suggestion or found bug.<p>Thank you again and have a nice day ahead!</p>
         <i>Note: This mail is auto-generated for every signup</i>
         <p>
         Thanks, <br/>
-        Attendlytical
+        IFSU ATTENDANCE
         </p>
     `;
 };
@@ -32,7 +32,7 @@ module.exports.KickStudent = (firstName, payload) => {
         Click <a href=${OfficialURL}>here</a> to sign in
         <p>
         Thanks, <br/>
-        Attendlytical
+        IFSU ATTENDANCE
         </p>
     `;
 };
@@ -54,7 +54,7 @@ module.exports.DeleteCourse = (firstName, payload) => {
         Click <a href=${OfficialURL}>here</a> to sign in
         <p>
         Thanks, <br/>
-        Attendlytical
+        IFSU ATTENDANCE
         </p>
     `;
 };
@@ -83,7 +83,7 @@ module.exports.WithdrawCourse = (firstName, payload) => {
     Click <a href=${OfficialURL}>here</a> to sign in
     <p>
     Thanks, <br/>
-    Attendlytical
+    IFSU ATTENDANCE
     </p>
       `;
 };
@@ -109,7 +109,7 @@ module.exports.CreateAttendance = (firstName, payload) => {
         Click <a href=${OfficialURL}>here</a> to sign in
         <p>
         Thanks, <br/>
-        Attendlytical
+        IFSU ATTENDANCE
         </p>
     `;
 };

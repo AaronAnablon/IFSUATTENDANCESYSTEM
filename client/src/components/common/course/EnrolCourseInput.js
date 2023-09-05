@@ -23,7 +23,7 @@ export default () => {
   );
   return (
     <div>
-      <p className='alert'>🢃 Enter Course ID for new enrolment</p>
+      <p className='alert'>🢃 Enter Department ID for new Registration</p>
 
       <Form style={{ display: 'flex' }} onFinish={() => enrolCourseCallback()}>
         <Form.Item

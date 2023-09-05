@@ -322,7 +322,7 @@ export default (props) => {
             <Space direction="vertical" className="width100">
               {data && (
                 <Title level={4}>
-                  Course:{" "}
+                  Department:{" "}
                   {`${data.getAttendanceListInCourse.course.code} ${data.getAttendanceListInCourse.course.name} (${data.getAttendanceListInCourse.course.session})`}
                 </Title>
               )}

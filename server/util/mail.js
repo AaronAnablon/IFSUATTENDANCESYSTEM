@@ -32,7 +32,7 @@ const getEmailData = (to, firstName, template, payload) => {
   switch (template) {
     case MAIL_TEMPLATE_TYPE.Welcome:
       data = {
-        from: "IFSU ATTENDANCE <iFSU ATTENDANCE@gmail.com>",
+        from: "IFSU ATTENDANCE <ifsu@gmail.com>",
         to,
         subject: `Welcome To IFSU ATTENDANCE!`,
         html: Welcome(firstName),
@@ -40,33 +40,33 @@ const getEmailData = (to, firstName, template, payload) => {
       break;
     case MAIL_TEMPLATE_TYPE.KickStudent:
       data = {
-        from: "IFSU ATTENDANCE <iFSU ATTENDANCE@gmail.com>",
+        from: "IFSU ATTENDANCE <ifsu@gmail.com>",
         to,
-        subject: `Course ID: ${payload.course.shortID} - You had been kicked out`,
+        subject: `Department ID: ${payload.course.shortID} - You had been kicked out`,
         html: KickStudent(firstName, payload),
       };
       break;
     case MAIL_TEMPLATE_TYPE.DeleteCourse:
       data = {
-        from: "IFSU ATTENDANCE <iFSU ATTENDANCE@gmail.com>",
+        from: "IFSU ATTENDANCE <ifsu@gmail.com>",
         to,
-        subject: `Course ID: ${payload.course.shortID} - A course was deleted by course owner`,
+        subject: `Department ID: ${payload.course.shortID} - A Department was deleted by Department admin`,
         html: DeleteCourse(firstName, payload),
       };
       break;
     case MAIL_TEMPLATE_TYPE.WithdrawCourse:
       data = {
-        from: "IFSU ATTENDANCE <iFSU ATTENDANCE@gmail.com>",
+        from: "IFSU ATTENDANCE <ifsu@gmail.com>",
         to,
-        subject: `Course ID: ${payload.course.shortID} - A student had withdrawn from your course`,
+        subject: `Department ID: ${payload.course.shortID} - A student/employee had withdrawn from your Department`,
         html: WithdrawCourse(firstName, payload),
       };
       break;
       case MAIL_TEMPLATE_TYPE.CreateAttendance:
         data = {
-          from: "IFSU ATTENDANCE <iFSU ATTENDANCE@gmail.com>",
+          from: "IFSU ATTENDANCE <ifsu@gmail.com>",
           to,
-          subject: `Course ID: ${payload.course.shortID} - New Attendance`,
+          subject: `Department ID: ${payload.course.shortID} - New Attendance`,
           html: CreateAttendance(firstName, payload),
         };
         break;

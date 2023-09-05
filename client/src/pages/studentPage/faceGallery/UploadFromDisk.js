@@ -143,7 +143,7 @@ export const UploadFromDisk = ({
               detectionCount
             )}
           </p>
-          Face Descriptor:{" "}
+          Face Descriptor {" "}
           {detectionCount === 0 && !isRunningFaceDetector && <span>Empty</span>}
           {isRunningFaceDetector && (
             <>
@@ -160,10 +160,10 @@ export const UploadFromDisk = ({
                 backgroundColor: "lightblue",
               }}
             >
-              <p style={{ color: "red", fontSize: "20px", fontWeight: 900 }}>
+              {/* <p style={{ color: "red", fontSize: "20px", fontWeight: 900 }}>
                 Face #{index + 1}:{" "}
               </p>{" "}
-              {desc.descriptor.toString()}
+              {desc.descriptor.toString()} */}
             </div>
           ))}
         </div>

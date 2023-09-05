@@ -68,10 +68,10 @@ export default () => {
                         14. Visualize the attendance data in "Attendance History", or you can enter a particular Department and click "View Attendance History".
                     </Row>
                     <Row>
-                        15. You can "Warn" or "Kick" the student out of a Department.
+                        15. You can "Warn" or "Kick" the student/employee out of a Department.
                     </Row>
                     <Row>
-                        16. The face photo of the student who is kicked out will not be counted next time taking the attendance.
+                        16. The face photo of the student/employee who is kicked out will not be counted next time taking the attendance.
                     </Row>
                 </Card>
                 <Divider />

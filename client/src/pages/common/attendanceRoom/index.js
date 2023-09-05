@@ -174,7 +174,7 @@ export default (props) => {
   const titleList = [
     { name: "Home", link: "/dashboard" },
     {
-      name: `Course: ${props.match.params.courseID}`,
+      name: `Department: ${props.match.params.courseID}`,
       link: `/course/${props.match.params.courseID}`,
     },
     {
@@ -196,17 +196,17 @@ export default (props) => {
         <PageTitleBreadcrumb titleList={titleList} />
         <Content>
           <Card
-            title={
-              mode == "F2F" ? (
-                <Title level={4}>F2F Attendance</Title>
-              ) : (
-                <Title level={4}>Remote Attendance</Title>
-              )
-            }
+            // title={
+            //   mode == "F2F" ? (
+            //     <Title level={4}>F2F Attendance</Title>
+            //   ) : (
+            //     <Title level={4}>Remote Attendance</Title>
+            //   )
+            // }
           >
             {data && (
               <Title level={4}>
-                Course:{" "}
+                Department:{" "}
                 {course.code + "-" + course.name + "(" + course.session + ")"}
               </Title>
             )}
@@ -262,7 +262,7 @@ export default (props) => {
             )}
           {/* For Remote, use Student PC For FR */}
 
-          {attendanceGQLQuery.data &&
+          {/* {attendanceGQLQuery.data &&
             isOn &&
             mode == "Remote" &&
             user.userLevel == 0 && (
@@ -272,7 +272,7 @@ export default (props) => {
                 facePhotos={facePhotos}
                 participants={participants}
               />
-            )}
+            )} */}
 
           {!isOn && user.userLevel == 0 && (
             <Card>

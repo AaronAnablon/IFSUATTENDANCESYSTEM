@@ -100,7 +100,7 @@ export default () => {
                   <Input
                     name='role'
                     defaultValue={`${
-                      user.userLevel === 0 ? 'Student' : 'Lecturer'
+                      user.userLevel === 0 ? 'Student/Employee' : 'Admin Control'
                     }`}
                     disabled
                   />
@@ -127,13 +127,13 @@ export default () => {
                 </Form.Item>
 
                 <Form.Item
-                  label={user.userLevel === 0 ? 'Matric Number' : 'Staff ID'}
+                  label={user.userLevel === 0 ? 'ID Number' : 'Staff ID'}
                   name='cardID'
                   rules={[
                     {
                       required: true,
                       message: `Please your ${
-                        user.userLevel === 0 ? 'Matric Number' : 'Staff ID'
+                        user.userLevel === 0 ? 'ID Number' : 'Staff ID'
                       }!`,
                     },
                   ]}
@@ -141,7 +141,7 @@ export default () => {
                   <Input
                     name='cardID'
                     placeholder={`Enter your ${
-                      user.userLevel === 0 ? 'Matric Number' : 'Staff ID'
+                      user.userLevel === 0 ? 'ID Number' : 'Staff ID'
                     }`}
                   />
                 </Form.Item>

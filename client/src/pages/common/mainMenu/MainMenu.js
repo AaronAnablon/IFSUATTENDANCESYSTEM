@@ -21,7 +21,7 @@ export default () => {
                 type="left"
                 mode="random"
               >
-                Welcome to IFSU ATTENDANCE
+                Welcome to IFSU ATTENDANCE SYSTEM
               </Texty>
             </Title>
             <Texty
@@ -29,7 +29,7 @@ export default () => {
               mode="smooth"
               interval="20"
             >
-              An attendance tracking app with facial recognition
+              An attendance system with facial recognition
             </Texty>
 
             <br />

@@ -11,7 +11,9 @@ export default () => {
   return (
     <div className='studentSiderNavbar'>
       <Link to='/dashboard'>
-        <div className='studentSiderNavbar__logo'>
+        <div className={ 
+          !collapsed ? 
+          'studentSiderNavbar__logo_big' : 'studentSiderNavbar__logo'}>
           <Avatar
             shape="square"
             className='avatar'
@@ -23,16 +25,15 @@ export default () => {
               console.log(err);
             }}
           />
-          <div
-            className={
-              !collapsed
-                ? 'studentSiderNavbar__text'
-                : 'studentSiderNavbar__text__hidden'
-            }
-          >
-            <span className='studentSiderNavbar__text__item'>Student</span>
-            <span className='studentSiderNavbar__text__item'>Version</span>
-          </div>
+        </div>
+        <div
+          className={
+            !collapsed
+              ? 'studentSiderNavbar__text'
+              : 'studentSiderNavbar__text__hidden'
+          }
+        >
+          <span className='studentSiderNavbar__text__item'>Student</span>
         </div>
       </Link>
 

@@ -51,7 +51,7 @@ export default (props) => {
       align: "center",
     },
     {
-      title: <strong>Matric Number</strong>,
+      title: <strong>ID Number</strong>,
       dataIndex: "cardID",
       key: "cardID",
       align: "center",

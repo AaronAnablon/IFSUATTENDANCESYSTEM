@@ -11,17 +11,21 @@
     margin-bottom: 50px;
 }
 
+.studentSiderNavbar__logo_big{
+
+    object-fit: cover;
+}
+
 .studentSiderNavbar__text__hidden{
     display: none;
 }
 
-.studentSiderNavbar__text__item:first-child{
-    font-weight: bold;
-    color: #99f;    
-    margin-right: 5px;
-}
-
-.studentSiderNavbar__text__item:nth-child(2){
+.studentSiderNavbar__text__item{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
     font-weight: bold;
     color: #fff;
+    margin-right: 5px;
 }

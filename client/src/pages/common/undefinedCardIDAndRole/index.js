@@ -92,17 +92,17 @@ export default (props) => {
             onFinish={onSubmit}
           >
             <Form.Item
-              label="Staff ID/Matrix No"
+              label="Staff ID/ID No"
               name="cardID"
               rules={[
                 {
                   required: true,
-                  message: "Please input your staff ID/Matrix No!",
+                  message: "Please input your staff ID/ID No!",
                 },
               ]}
             >
               <Input
-                placeholder="Enter your staff ID/Matrix No"
+                placeholder="Enter your staff ID/ID No"
                 name="cardID"
                 onChange={onChange}
               />
@@ -113,8 +113,8 @@ export default (props) => {
                 value={values.userLevel}
                 onChange={onChange}
               >
-                <Radio value={0}>Student</Radio>
-                <Radio value={1}>Lecturer</Radio>
+                <Radio value={0}>Student/Employee</Radio>
+                <Radio value={1}>Admin</Radio>
               </Radio.Group>
             </Form.Item>
             <Divider />

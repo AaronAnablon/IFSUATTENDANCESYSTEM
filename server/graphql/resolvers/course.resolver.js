@@ -239,9 +239,9 @@ module.exports = {
           //notify the student who enrol still pending in this course
           const sendNotification = new Notification({
             receiver: enrolment.student,
-            title: `Course Deleted Notification - Course ID: ${course2Delete.shortID}`,
-            content: `Course owner: [${currUser.firstName} ${currUser.lastName}] had deleted the course: ${course2Delete.name} (${course2Delete.code}-${course2Delete.session}),
-             hence deleted from your enrolment pending list`,
+            title: `Department Deleted Notification - Department ID: ${course2Delete.shortID}`,
+            content: `Department owner: [${currUser.firstName} ${currUser.lastName}] had deleted the Department: ${course2Delete.name} (${course2Delete.code}-${course2Delete.session}),
+             hence deleted from your registration pending list`,
           });
           await sendNotification.save();
 
@@ -276,8 +276,8 @@ module.exports = {
 
           notification = new Notification({
             receiver: stud,
-            title: `Course Deleted Notification - Course ID: ${course2Delete.shortID}`,
-            content: `Course owner: [${currUser.firstName} ${currUser.lastName}] had deleted the course: ${course2Delete.name} (${course2Delete.code}-${course2Delete.session})`,
+            title: `Department Deleted Notification - Department ID: ${course2Delete.shortID}`,
+            content: `Department owner: [${currUser.firstName} ${currUser.lastName}] had deleted the Department: ${course2Delete.name} (${course2Delete.code}-${course2Delete.session})`,
           });
 
           await notification.save();
@@ -304,18 +304,18 @@ module.exports = {
       let errors = {};
       try {
         if (currUser.userLevel !== 0) {
-          errors.general = "You are not a student but want to unenrol course!";
+          errors.general = "You are not a student but want to unregister Department!";
           throw new UserInputError(
-            "You are not a student but want to unenrol course!",
+            "You are not a student but want to unregister Department!",
             { errors }
           );
         }
 
         const course2withdraw = await Course.findById(courseID);
         if (!course2withdraw) {
-          errors.general = "Course not exist but student wish to withdraw!";
+          errors.general = "Department not exist but student wish to withdraw!";
           throw new UserInputError(
-            "Course not exist but student wish to withdraw!",
+            "Department not exist but student wish to withdraw!",
             { errors }
           );
         }
@@ -324,8 +324,8 @@ module.exports = {
         );
 
         if (!student) {
-          errors.general = "Student do not enrol the course";
-          throw new UserInputError("Student do not enrol the course", {
+          errors.general = "Student do not register the Department";
+          throw new UserInputError("Student do not register the Department", {
             errors,
           });
         }
@@ -339,8 +339,8 @@ module.exports = {
         const owner = await Person.findById(course2withdraw.creator);
 
         if (!owner) {
-          errors.general = "Course owner do not exist";
-          throw new UserInputError("Course owner do not exist", { errors });
+          errors.general = "Department admin do not exist";
+          throw new UserInputError("Department admin do not exist", { errors });
         }
 
         await Warning.deleteOne({ student: currUser._id, course: courseID });
@@ -348,8 +348,8 @@ module.exports = {
         //notify lecturer
         notification = new Notification({
           receiver: owner.id,
-          title: `Course Withdrawal - Course ID: ${course2withdraw.shortID}`,
-          content: `Student: [${currUser.firstName} ${currUser.lastName}(${currUser.cardID})] had withdrawn the course: ${course2withdraw.name} (${course2withdraw.code}-${course2withdraw.session}).`,
+          title: `Department Withdrawal - Department ID: ${course2withdraw.shortID}`,
+          content: `Student/Employee: [${currUser.firstName} ${currUser.lastName}(${currUser.cardID})] had withdrawn the Department: ${course2withdraw.name} (${course2withdraw.code}-${course2withdraw.session}).`,
         });
 
         //notify lecturer through email
@@ -377,16 +377,16 @@ module.exports = {
 
         if (currUser.userLevel !== 0) {
           errors.general =
-            "Added person is a not student and is not allowed to join any course";
+            "Added person is a not student/employee and is not allowed to join any Department";
           throw new UserInputError(
-            "Added person is a not student and is not allowed to join any course",
+            "Added person is a not student/employee and is not allowed to join any Department",
             { errors }
           );
         }
 
         if (!course) {
-          errors.general = "Course do not exist";
-          throw new UserInputError("Course do not exist", { errors });
+          errors.general = "Department do not exist";
+          throw new UserInputError("Department do not exist", { errors });
         }
 
 
@@ -396,8 +396,8 @@ module.exports = {
           );
 
           if (student) {
-            errors.general = "You already enrolled the course!";
-            throw new UserInputError("You already enrolled the course", {
+            errors.general = "You already registered to the Department!";
+            throw new UserInputError("You already registered to the Department", {
               errors,
             });
           }
@@ -405,7 +405,7 @@ module.exports = {
         course.enrolledStudents.push(currUser._id);
         await course.save();
         
-        return "Enrol Success";
+        return "Registration Success";
       } catch (err) {
         throw err;
       }
@@ -419,8 +419,8 @@ module.exports = {
         const kickedPerson = await Person.findById(participantID);
 
         if (!course) {
-          errors.general = "Course do not exist";
-          throw new UserInputError("Course do not exist", { errors });
+          errors.general = "Department do not exist";
+          throw new UserInputError("Department do not exist", { errors });
         }
 
         if (course.creator != currUser._id) {
@@ -453,8 +453,8 @@ module.exports = {
 
         const notification = new Notification({
           receiver: participantID,
-          title: `Kicked Out Notification - Course ID: ${courseID}`,
-          content: `Course owner: [${currUser.firstName} ${currUser.lastName}] have kicked you out from the course: ${course.name} (${course.code}-${course.session})`,
+          title: `Kicked Out Notification - Department ID: ${courseID}`,
+          content: `Department admin: [${currUser.firstName} ${currUser.lastName}] have kicked you out from the Department: ${course.name} (${course.code}-${course.session})`,
         });
 
         await notification.save();

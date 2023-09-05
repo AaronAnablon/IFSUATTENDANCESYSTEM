@@ -89,7 +89,7 @@ export default (props) => {
         <Content>
           <Card title="Attendance Form" className="addCourse__card">
             <Form onFinish={handleSubmit}>
-              <Form.Item label="Course">
+              <Form.Item label="Department">
                 {courseGQLQuery.data && (
                   <span>
                     {courseGQLQuery.data.getCourse.code} -

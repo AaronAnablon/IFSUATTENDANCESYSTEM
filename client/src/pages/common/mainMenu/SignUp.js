@@ -146,18 +146,18 @@ export default (props) => {
             </Form.Item>
 
             <Form.Item
-              label='Staff ID/Matrix No'
+              label='Staff ID/ID No'
               name='cardID'
               rules={[
                 {
                   required: true,
-                  message: 'Please input your staff ID/Matrix No!',
+                  message: 'Please input your staff ID/ID No!',
                 },
               ]}
             >
               <Input
                 name='cardID'
-                placeholder='Enter your staff ID/Matrix No'
+                placeholder='Enter your staff ID/ID No'
                 onChange={onChange}
               />
             </Form.Item>
@@ -209,16 +209,16 @@ export default (props) => {
                 onChange={onChange}
               />
             </Form.Item>
-            <Form.Item label='Role' name='userLevel' valuePropName='checked'>
+            {/* <Form.Item label='Role' name='userLevel' valuePropName='checked'>
               <Radio.Group
                 name='userLevel'
                 value={values.userLevel}
                 onChange={onChange}
               >
-                <Radio value={0}>Student</Radio>
-                <Radio value={1}>Lecturer</Radio>
+                <Radio value={0}>Student/Employee</Radio>
+                <Radio value={1}>Admin Control</Radio>
               </Radio.Group>
-            </Form.Item>
+            </Form.Item> */}
             <Divider />
 
             <Form.Item>

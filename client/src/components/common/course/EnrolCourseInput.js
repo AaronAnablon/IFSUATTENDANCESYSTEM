@@ -12,7 +12,7 @@ export default () => {
     {
       onCompleted(data) {
         message.success(
-          'Enrol success'
+          'Register success'
         );
       },
       onError(err) {
@@ -27,13 +27,13 @@ export default () => {
 
       <Form style={{ display: 'flex' }} onFinish={() => enrolCourseCallback()}>
         <Form.Item
-          label='Course ID'
+          label='Department ID'
           name='courseID'
-          rules={[{ required: true, message: 'Please input course ID!' }]}
+          rules={[{ required: true, message: 'Please input Department ID!' }]}
         >
           <Input
             name='courseCode'
-            placeholder='Enter course ID to enrol'
+            placeholder='Enter Department ID to enrol'
             onChange={(e) => setCourseID(e.target.value)}
           />
         </Form.Item>

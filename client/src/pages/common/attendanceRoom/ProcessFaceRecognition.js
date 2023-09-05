@@ -45,7 +45,7 @@ export default (props) => {
   const [fullDesc, setFullDesc] = useState(null);
   const [waitText, setWaitText] = useState("");
 
-  const [ createTrxCallback ] = useMutation(
+  const [createTrxCallback] = useMutation(
     CREATE_TRX_MUTATION,
     {
       update(_, { data }) {
@@ -117,16 +117,18 @@ export default (props) => {
         if (!!fullDesc) {
           console.log("Now got full desc");
           fullDesc.map((desc) => {
-            const bestMatch = faceMatcher.findBestMatch(desc.descriptor);
-            console.log(bestMatch);
-            if (bestMatch._label != "unknown") {
-              createTrxCallback({
-                variables: {
-                  attendanceID: props.match.params.attendanceID,
-                  studentID: bestMatch._label,
-                },
-              });
-              console.log("Saving in db now");
+            if (faceMatcher && faceMatcher.findBestMatch !== null) {
+              const bestMatch = faceMatcher.findBestMatch(desc.descriptor);
+              console.log(bestMatch);
+              if (bestMatch._label != "unknown") {
+                createTrxCallback({
+                  variables: {
+                    attendanceID: props.match.params.attendanceID,
+                    studentID: bestMatch._label,
+                  },
+                });
+                console.log("Saving in db now");
+              }
             }
           });
         }

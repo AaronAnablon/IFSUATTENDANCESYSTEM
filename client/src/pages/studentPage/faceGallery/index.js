@@ -170,7 +170,7 @@ export default () => {
                     <br /> <br />
                   </Card>
                   &nbsp;
-                  <strong>Face Descriptor: </strong>
+                  {/* <strong>Face Descriptor: </strong>
                   <Button onClick={() => handleDescriptorVisible(photo._id)}>
                     {!isDescriptorVisible[photo._id] ? "Show" : "Hide"}
                   </Button>
@@ -184,7 +184,7 @@ export default () => {
                     >
                       {photo.faceDescriptor}
                     </p>
-                  )}
+                  )} */}
                   <div
                     style={{
                       display: "flex",

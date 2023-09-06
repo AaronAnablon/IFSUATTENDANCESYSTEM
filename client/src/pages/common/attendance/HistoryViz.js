@@ -105,7 +105,7 @@ export default ({ attendeesLength, absenteesLength }) => {
   };
 
   return (
-    <PieChart width={pieSize.width} height={pieSize.height / 2}>
+    <PieChart width={pieSize.width} height={pieSize.height}>
       <Pie
         activeIndex={activeIndex}
         activeShape={renderActiveShape}

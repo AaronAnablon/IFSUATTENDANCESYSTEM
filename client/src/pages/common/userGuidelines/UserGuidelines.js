@@ -15,13 +15,13 @@ export default () => {
                     <Row>
                         <Title level={2}>User Guidelines</Title>
                     </Row>
+                    {/*           
                     <Row>
                         There are 2 user roles which are "Student/Employee" and "Admin Controls"
-                    </Row>
-
+                    </Row> */}
                 </Card>
                 <Divider />
-                <Card>
+                {/* <Card>
                     <Row>
                         Instructions For Admin Controls:
                     </Row>
@@ -73,7 +73,7 @@ export default () => {
                     <Row>
                         16. The face photo of the student/employee who is kicked out will not be counted next time taking the attendance.
                     </Row>
-                </Card>
+                </Card> */}
                 <Divider />
                 <Card>
                     <Row>
@@ -86,7 +86,7 @@ export default () => {
                         2. Enrol a Department.
                     </Row>
                     <Row>
-                        3. Wait for approval from the lecturer.
+                        3. Wait for the system to load.
                     </Row>
                     <Row>
                         4. Upload your face photo in "Face Gallery", best to have at least 2 face photo.

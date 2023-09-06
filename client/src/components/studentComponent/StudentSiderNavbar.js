@@ -11,12 +11,12 @@ export default () => {
   return (
     <div className='studentSiderNavbar'>
       <Link to='/dashboard'>
-        <div className={ 
-          !collapsed ? 
-          'studentSiderNavbar__logo_big' : 'studentSiderNavbar__logo'}>
+        <div className={!collapsed ? "logo_size_big" : "logo_size_small"}>
           <Avatar
             shape="square"
-            className='avatar'
+            className={
+              !collapsed ?
+                'studentSiderNavbar_logo_big' : 'studentSiderNavbar_logo'}
             size='large'
             alt='Face In'
             title='Face in (Student Version)'
@@ -35,6 +35,7 @@ export default () => {
         >
           <span className='studentSiderNavbar__text__item'>Student</span>
         </div>
+
       </Link>
 
       <div className='studentSiderNavbar__menu'>

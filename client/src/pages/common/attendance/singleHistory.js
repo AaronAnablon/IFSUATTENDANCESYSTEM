@@ -126,7 +126,7 @@ export default (props) => {
     },
     notifyOnNetworkStatusChange: true,
   });
-  
+
   useEffect(() => {
     if (courseAndParticipantsGQLQuery.data) {
       setParticipants(
@@ -152,7 +152,7 @@ export default (props) => {
         const result = trxListInAttendanceGQLQuery.data.getTrxListInAttendance.filter(
           (attendee) => participant._id == attendee.studentID
         );
-          console.log("result", result);
+        console.log("result", result);
         if (result.length >= 1) {
           Object.assign(participant, { attend_at: result[0].createdAt });
         }
@@ -162,8 +162,8 @@ export default (props) => {
       setAbsentees(currAbsentees);
       setAttendees(currAttendees);
     }
-    return ()=>{
-      
+    return () => {
+
       setAbsentees([]);
       setAttendees([]);
     }
@@ -171,7 +171,7 @@ export default (props) => {
 
   useEffect(() => {
     setStats(`${attendees.length}/${participants.length}`);
-    return ()=>{
+    return () => {
       setStats("");
     }
   }, [attendees, absentees, participants]);
@@ -186,9 +186,8 @@ export default (props) => {
           <Avatar
             src={participant.profilePictureURL}
             style={{
-              backgroundColor: `rgb(${Math.random() * 150 + 30}, ${
-                Math.random() * 150 + 30
-              }, ${Math.random() * 150 + 30})`,
+              backgroundColor: `rgb(${Math.random() * 150 + 30}, ${Math.random() * 150 + 30
+                }, ${Math.random() * 150 + 30})`,
             }}
           >
             {/* Set the avatar to participant's first name */}
@@ -272,14 +271,18 @@ export default (props) => {
                 </p>
                 <br />
               </Card>
+
               {courseAndParticipantsGQLQuery.data ? (
+
                 <HistoryViz
                   attendeesLength={attendees.length}
                   absenteesLength={absentees.length}
                 />
+
               ) : (
                 <LoadingSpin loading={courseAndParticipantsGQLQuery.loading} />
               )}
+
               <Button
                 style={{ float: "right" }}
                 icon={<RedoOutlined />}

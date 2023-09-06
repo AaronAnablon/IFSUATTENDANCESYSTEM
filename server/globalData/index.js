@@ -7,4 +7,4 @@ module.exports.MAIL_TEMPLATE_TYPE={
 
 }
 
-module.exports.OfficialURL="https://attendlytical.netlify.app";
+module.exports.OfficialURL="https://ifsuattendance.netlify.app";

@@ -64,14 +64,14 @@ module.exports = {
       try {
         const course = await Course.findOne({ shortID: courseID });
         if (!course){
-          throw new Error("Course does not exist.");
+          throw new Error("Department does not exist.");
         }
         if (
           course.creator != currUser._id &&
           !course.enrolledStudents.find((stud) => stud._id == currUser._id)
         ) {
           throw new Error(
-            "Access Prohibited. You are not the owner of the course or join this course"
+            "Access Prohibited. You are not the admin of the Department or join this Department"
           );
         }
         const matcher = course.enrolledStudents.map(async (stud) => {

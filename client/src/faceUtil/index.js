@@ -17,7 +17,7 @@ export async function loadModels(
     await faceapi.loadFaceRecognitionModel(MODEL_URL);
   } catch (err) {
     setLoadingMessageError(
-      'Model loading failed. Please contact me about the bug:attendlytical@gmail.com'
+      'Model loading failed. Please contact me about the bug:ifsu@gmail.com'
     );
   }
 }

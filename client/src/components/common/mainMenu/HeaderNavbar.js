@@ -26,7 +26,7 @@ export default () => {
               }}
             />
             <div className='headerNavbar__text'>
-              <span className='headerNavbar__text__item'>IFSU ATTENDANCE SYSTEM</span>
+              <span className='headerNavbar__text__item'>ATTENDANCE SYSTEM BY: AARON ANABLON</span>
             </div>
           </div>
         </Link>

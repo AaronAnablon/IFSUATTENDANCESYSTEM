@@ -21,7 +21,7 @@ export default () => {
                 type="left"
                 mode="random"
               >
-                Welcome to IFSU ATTENDANCE SYSTEM
+                Welcome to SCHOOL ATTENDANCE SYSTEM
               </Texty>
             </Title>
             <Texty

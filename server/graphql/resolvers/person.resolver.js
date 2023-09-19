@@ -122,7 +122,7 @@ module.exports = {
         if (newPerson.userLevel === 0) {
           const notification = new Notification({
             receiver: newPerson.id,
-            title: 'Welcome To IFSU ATTENDANCE SYSTEM',
+            title: 'Welcome To SCHOOL ATTENDANCE SYSTEM',
             content:
               'Please remember to upload your face photograph for attendance verification',
           });

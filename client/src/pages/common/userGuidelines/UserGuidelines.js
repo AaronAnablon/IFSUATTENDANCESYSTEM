@@ -15,13 +15,13 @@ export default () => {
                     <Row>
                         <Title level={2}>User Guidelines</Title>
                     </Row>
-                    {/*           
+
                     <Row>
                         There are 2 user roles which are "Student/Employee" and "Admin Controls"
-                    </Row> */}
+                    </Row>
                 </Card>
                 <Divider />
-                {/* <Card>
+                <Card>
                     <Row>
                         Instructions For Admin Controls:
                     </Row>
@@ -73,7 +73,7 @@ export default () => {
                     <Row>
                         16. The face photo of the student/employee who is kicked out will not be counted next time taking the attendance.
                     </Row>
-                </Card> */}
+                </Card>
                 <Divider />
                 <Card>
                     <Row>
